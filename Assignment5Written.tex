@@ -27,7 +27,7 @@ In this document we shall be comparing \PP and \CR in the following categories.
 \item Difficulty in managing
 \end{itemize}
 
-In each of these categories we will talk about what is similar and what is different between \PP and \CR 
+In each of these categories we will talk about what is similar and what is different between \PP and \CR  \PR
 
 
 \subsection{The Need for Review}
@@ -36,7 +36,22 @@ In each of these categories we will talk about what is similar and what is diffe
 
 \subsection{Code Quality}
 
-Code
+Both approaches increase the quality of code by a significant amount. \footnote{Cite Code Complete} discovered the ability to discover \ref{tab:defect}
+
+\begin{table}[hb]
+\begin{tabular}{c|c}
+Method & Percent of Defects Found\\\hline
+Unit Testing & 25\% \\
+Function Testing & 35\% \\
+Integration Testing & 45\% \\
+Design Review & 55\% \\
+Code Reviews & 60\%\\
+\end{tabular}
+\label{tab:defect}
+\caption{Percentage of defects discovered by various methods}
+\end{table}
+
+\PP "“I strongly feel pair-programming is the primary reason our team has been successful. It has given us a very high level of code quality (almost to the point of zero defects). The only code we have ever had errors in was code that wasn’t pair programmed \dots we should really question a situation where it isn’t utilized.”"
 
 \subsection{Cost and Productivity}
 
@@ -45,6 +60,8 @@ Software developers are not free, nor are they cheap, so cost is a big factor in
 Despite what some might think, neither one doubles cost, or halves productivity. In the long run both of them increase productivity because they increase code quality, and increase the number of developers who understand a section of code. Having multiple developers understand a section of code means that if one developer goes on vacation or leaves the workplace, the code can still be maintained and fixed.
 
 Catching errors as soon in the development process as you can reduces the cost to fix the bug. \cite{avgCostOfDefect}\footnote{Table 3.1 Code Complete} outlines the costs for fixing bugs caught during various parts of the software development process. A bug introduced during construction (ie programming error) costs 10 times as much if caught during system testing than if caught during construction. The same bug can be 10-25 times as expensive if caught after release. This suggests that if the majority of a project's time is spent fixing bugs, introducing code review or pair programming to reduce the number of bugs could increase productivity by 10.
+
+\PP also allows programmers to catch each other's mistakes, and remember method names or uses without looking at doucmentation. During a study comparing individual programmers to pairs of programmers, it was discovered that 60\% more time was spent by the teams (when combining their time). After the first task completed, and the programmers were adjusted, that time reduced to as little as 15% more time required. This means that the costs for programmers in the short term will increase between 15-60\%, and as established the high code quality will decrease the cost in the long run.
 
 Which of the 2 efforts costs more\footnote{in terms of after bug-cost, and lost developer time trying to understand poorly designed code}? It's dependent on what systems are already in place for your software team. 
 
@@ -58,6 +75,13 @@ Which of the 2 efforts costs more\footnote{in terms of after bug-cost, and lost 
 In the theoretical world management could choose any software practice it wanted, and all the developers would automatically be capable and willing to follow. In practice however developers may have difficulties understanding what is expected, or might even be lazy about doing their parts.
 
 \section{Conclusion}
+
+
+
+%CITATIONS, TOO LAZY TO DO RIGHT NOW 
+%http://www.cs.utah.edu/~lwilliam/Papers/ieeeSoftware.PDF  , Strengthening the Case for Pair-Programming 
+%Table 3.1 Code Complete
+%http://www.codinghorror.com/blog/2006/01/code-reviews-just-do-it.html (Actual source is Code Complete)
 
 
 \end{document}
