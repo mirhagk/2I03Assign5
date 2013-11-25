@@ -1,3 +1,8 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{McConnell:2004:CCS:1096143}
+Steve McConnell.
+\newblock {\em Code Complete, Second Edition}.
+\newblock Microsoft Press, Redmond, WA, USA, 2004.
 
 \end{thebibliography}

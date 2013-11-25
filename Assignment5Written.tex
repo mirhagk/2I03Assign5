@@ -46,22 +46,24 @@ In each of these categories we will talk about what is similar and what is diffe
 
 \subsection{Code Quality}
 
-Both approaches increase the quality of code by a significant amount. \footnote{Cite Code Complete} found that various practices discovered more defects than others. \ref{tab:defect} Lists their conclusions.
+Both approaches increase the quality of code by a significant amount. Code Complete\cite[Table 20-2]{McConnell:2004:CCS:1096143} found that various practices discovered more defects than others. \ref{tab:defect} Lists their conclusions.
 
 \begin{table}[hb]
 \begin{tabular}{c|c}
 Method & Percent of Defects Found\\\hline
-Unit Testing & 25\% \\
-Function Testing & 35\% \\
-Integration Testing & 45\% \\
-Design Review & 55\% \\
-Code Reviews & 60\%\\
+Unit Testing & 30\% \\
+Function Testing & 30\% \\
+Integration Testing & 35\% \\
+Informal Code Review & 25\% \\
+Formal Code Review & 60\%\\
 \end{tabular}
 \label{tab:defect}
 \caption{Percentage of defects discovered by various methods}
 \end{table}
 
-From this table we can see that \CR s are able to find about 60\% of defects, compared to 35\% from testing functionality. Not only that but \CR
+From this table we can see that coder reviews are able to find about 60\% of defects, compared to 30\% from testing functionality\footnote{Note that it also discovered that informal code reviews only discover about 25\%, so a formal process needs to be in place}. Not only that but \CR and \PP also increase the readability of the code, promote clearer variable and function names, and more comments.
+
+The big difference between the two lies in whether the code is able to speak for itself or not. In order for code to pass a \CR it must be clear from the code and comments alone what exactly it does. The original programmer isn't there to shed additional light, so if code isn't clear, it is rejected and the original programmer has to make it clear before it passes review. With \PP the original programmer is sitting there with the reviewer, and the information known to the original programmer is also known to the reviewer. This means that the reviewer may take for granted some information that might not be known to another developer on the team looking at the code later. It is for this reason that \CR could produce clearer code, and with \PP the reviewer needs to be on the lookout for this.
 
 \subsection{Cost and Productivity}
 
@@ -69,7 +71,7 @@ Software developers are not free, nor are they cheap, so cost is a big factor in
 
 Despite what some might think, neither one doubles cost, or halves productivity. In the long run both of them increase productivity because they increase code quality, and increase the number of developers who understand a section of code. Having multiple developers understand a section of code means that if one developer goes on vacation or leaves the workplace, the code can still be maintained and fixed.
 
-Catching errors as soon in the development process as you can reduces the cost to fix the bug. \cite{avgCostOfDefect}\footnote{Table 3.1 Code Complete} outlines the costs for fixing bugs caught during various parts of the software development process. A bug introduced during construction (ie programming error) costs 10 times as much if caught during system testing than if caught during construction. The same bug can be 10-25 times as expensive if caught after release. This suggests that if the majority of a project's time is spent fixing bugs, introducing code review or pair programming to reduce the number of bugs could increase productivity by 10.
+Catching errors as soon in the development process as you can reduces the cost to fix the bug. Code Complete\cite[Table 3.1]{McConnell:2004:CCS:1096143} outlines the costs for fixing bugs caught during various parts of the software development process. A bug introduced during construction (ie programming error) costs 10 times as much if caught during system testing than if caught during construction. The same bug can be 10-25 times as expensive if caught after release. This suggests that if the majority of a project's time is spent fixing bugs, introducing code review or pair programming to reduce the number of bugs could increase productivity by 10.
 
 \PP also allows programmers to catch each other's mistakes, and remember method names or uses without looking at doucmentation. During a study comparing individual programmers to pairs of programmers, it was discovered that 60\% more time was spent by the teams (when combining their time). After the first task completed, and the programmers were adjusted, that time reduced to as little as 15% more time required. This means that the costs for programmers in the short term will increase between 15-60\%, and as established the high code quality will decrease the cost in the long run.
 
