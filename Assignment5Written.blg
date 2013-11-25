@@ -1,5 +1,9 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Assignment5Written.aux
 The style file: plain.bst
 Database file #1: WA5BIB.bib
-Warning--I didn't find a database entry for "avgCostOfDefect"
-(There was 1 warning)
+I was expecting a `,' or a `}'---line 14 of file WA5BIB.bib
+ : 
+ : author="Jeff Atwood"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+(There was 1 error message)

@@ -5,4 +5,8 @@ Steve McConnell.
 \newblock {\em Code Complete, Second Edition}.
 \newblock Microsoft Press, Redmond, WA, USA, 2004.
 
+\bibitem{William}
+Laurie Williams.
+\newblock Strengthening the case for pair-programming.
+
 \end{thebibliography}
